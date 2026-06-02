@@ -1,0 +1,12 @@
+from enum import IntEnum
+
+
+class Code(IntEnum):
+    OK = 0
+    INVALID_PARAM = 40001
+    UNAUTHORIZED = 40100
+    NOT_FOUND = 40400
+    DECODE_IMAGE_FAILED = 40002
+    DB_ERROR = 50001
+    INTERNAL_ERROR = 50000
+

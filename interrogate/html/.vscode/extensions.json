@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "antfu.unocss",
+    "esbenp.prettier-vscode"
+  ]
+}

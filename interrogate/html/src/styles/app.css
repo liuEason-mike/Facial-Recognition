@@ -1,0 +1,38 @@
+:root {
+  --c-bg: #fff;
+  --c-fg: #333;
+}
+
+:root.dark {
+  color-scheme: dark;
+  --c-bg: #232323;
+  --c-fg: #fff;
+}
+
+body {
+  background-color: var(--c-bg);
+  color: var(--c-fg);
+}
+
+/* Color Mode transition */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2147483646;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 2147483646;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 1;
+}

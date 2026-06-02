@@ -1,0 +1,33 @@
+{
+  "extends": "@tsconfig/node22/tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node"],
+    "libReplacement": false,
+    "noEmit": true
+  },
+  "include": [
+    "vite.config.*",
+    "src/**/*.test.ts",
+    "src/types/asr.ts",
+    "src/types/face.ts",
+    "src/constants/emotion.ts",
+    "src/utils/asr.ts",
+    "src/utils/asrKeywords.ts",
+    "src/utils/anomalyData.ts",
+    "src/utils/faceFrameGate.ts",
+    "src/utils/faceAnalysis.ts",
+    "src/utils/faceTestStatus.ts",
+    "src/utils/interrogation.ts",
+    "src/utils/faceRegions.ts",
+    "src/utils/speakerTranscript.ts",
+    "src/utils/wav.ts",
+    "src/utils/quickQuery.ts",
+    "src/types/interrogation.ts",
+    "src/types/simulation.ts"
+  ]
+}

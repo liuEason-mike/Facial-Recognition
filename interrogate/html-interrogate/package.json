@@ -1,0 +1,35 @@
+{
+  "name": "interrogate-html-interrogate",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p typecheck \"build-only {@}\" --",
+    "build-only": "vite build",
+    "test:unit": "node --test --experimental-strip-types src/utils/*.test.ts",
+    "typecheck": "vue-tsc --build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^14.2.1",
+    "dayjs": "^1.11.20",
+    "element-plus": "^2.13.7",
+    "pinia": "^3.0.4",
+    "uuid": "^13.0.0",
+    "vue": "^3.5.32",
+    "vue-router": "^5.0.4"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.5",
+    "@types/node": "^25.6.0",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/tsconfig": "^0.9.1",
+    "npm-run-all2": "^8.0.4",
+    "typescript": "^6.0.2",
+    "unocss": "^66.6.8",
+    "vite": "^8.0.8",
+    "vue-tsc": "^3.2.6"
+  }
+}

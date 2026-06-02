@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: var(--room-text);
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.025),
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    linear-gradient(135deg, #05040a 0%, #12102b 48%, #08070f 100%);
+  font-family:
+    "Alibaba PuHuiTi",
+    "HarmonyOS Sans SC",
+    "Microsoft YaHei",
+    "PingFang SC",
+    sans-serif;
+  overflow: hidden;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.el-button {
+  letter-spacing: 0;
+}
+
+.el-textarea__inner,
+.el-input__wrapper {
+  color: var(--room-text);
+  background: rgba(9, 8, 22, 0.82);
+  box-shadow: 0 0 0 1px var(--room-border) inset;
+}

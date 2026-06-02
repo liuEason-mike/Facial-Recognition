@@ -1,0 +1,28 @@
+# Python 缓存
+__pycache__/
+*/__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+
+# Docker
+build/docker/Dockerfileandfron
+*Dockerfile_backend*
+
+# 日志
+storage/logs/*
+*.log
+*.log.*
+
+# 环境变量
+*.env_pro*
+*.env_dev*
+
+# 孤立森林模型
+*.pkl
+
+# 前端
+*html-next*
